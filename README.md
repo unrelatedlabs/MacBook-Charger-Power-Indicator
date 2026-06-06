@@ -38,3 +38,7 @@ Quit it from its own dropdown (**Quit MacBat**).
 ```sh
 ./package.sh   # creates dist/MacBat.dmg and dist/MacBat.zip
 ```
+
+## License
+
+MIT — © 2026 Peter Kuhar ([@pkuhar](https://github.com/pkuhar)). See [LICENSE](LICENSE).
