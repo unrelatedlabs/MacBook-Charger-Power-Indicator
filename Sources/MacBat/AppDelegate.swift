@@ -144,7 +144,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         login.state = (SMAppService.mainApp.status == .enabled) ? .on : .off
         menu.addItem(login)
 
-        let quit = NSMenuItem(title: "Quit MacBat", action: #selector(quit),
+        let quit = NSMenuItem(title: "Quit", action: #selector(quit),
                               keyEquivalent: "q")
         quit.target = self
         menu.addItem(quit)

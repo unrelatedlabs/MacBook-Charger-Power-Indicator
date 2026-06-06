@@ -1,4 +1,4 @@
-# MacBat
+# MacBook Charger Power Indicator
 
 A tiny macOS menu-bar app that shows your battery — and, when a charger is
 plugged in, the **charging power in watts**.
@@ -27,8 +27,8 @@ It reads everything locally from macOS (IOKit). Nothing is sent anywhere.
 ## Run it
 
 ```sh
-./build-app.sh         # build MacBat.app
-open build/MacBat.app  # launch it into the menu bar
+./build-app.sh   # build "MacBook Charger Power Indicator.app" into build/
+open "build/MacBook Charger Power Indicator.app"   # launch into the menu bar
 ```
 
 To start it automatically at login:
@@ -38,12 +38,12 @@ To start it automatically at login:
 ```
 
 It runs as a background app — no Dock icon, no window, just the menu-bar item.
-Quit it from its own dropdown (**Quit MacBat**).
+Quit it from its own dropdown (**Quit**).
 
 ## Build a shareable copy
 
 ```sh
-./package.sh   # creates dist/MacBat.dmg and dist/MacBat.zip
+./package.sh   # creates dist/MacBook-Charger-Power-Indicator.dmg and .zip
 ```
 
 ## License

@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleName</key>
-    <string>MacBat</string>
+    <string>MacBook Charger Power Indicator</string>
     <key>CFBundleDisplayName</key>
-    <string>MacBat</string>
+    <string>MacBook Charger Power Indicator</string>
     <key>CFBundleIdentifier</key>
     <string>com.pkuhar.macbat</string>
     <key>CFBundleExecutable</key>
@@ -23,6 +23,6 @@
     <key>LSUIElement</key>
     <true/>
     <key>NSHumanReadableCopyright</key>
-    <string>MacBat</string>
+    <string>© 2026 Peter Kuhar</string>
 </dict>
 </plist>

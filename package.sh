@@ -1,14 +1,16 @@
 #!/bin/bash
-# Build a distributable MacBat: universal binary, generated icon, ad-hoc signed,
-# packaged as dist/MacBat.dmg and dist/MacBat.zip.
+# Build a distributable: universal binary, generated icon, ad-hoc signed,
+# packaged as a .dmg and .zip in dist/.
 set -euo pipefail
 
 cd "$(dirname "$0")"
 
-APP="dist/MacBat.app"
+APP_NAME="MacBook Charger Power Indicator"
+ASSET="MacBook-Charger-Power-Indicator"
+APP="dist/$APP_NAME.app"
 CONTENTS="$APP/Contents"
-DMG="dist/MacBat.dmg"
-ZIP="dist/MacBat.zip"
+DMG="dist/$ASSET.dmg"
+ZIP="dist/$ASSET.zip"
 VERSION="$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' Resources/Info.plist 2>/dev/null || echo 1.0)"
 
 echo "==> Building universal release binary (arm64 + x86_64)"
@@ -53,7 +55,7 @@ STAGE="dist/dmg-stage"
 rm -rf "$STAGE"; mkdir -p "$STAGE"
 cp -R "$APP" "$STAGE/"
 ln -s /Applications "$STAGE/Applications"
-hdiutil create -volname "MacBat $VERSION" -srcfolder "$STAGE" \
+hdiutil create -volname "$APP_NAME" -srcfolder "$STAGE" \
     -ov -format UDZO "$DMG" >/dev/null
 rm -rf "$STAGE"
 
@@ -64,4 +66,4 @@ echo "    $DMG  ($(du -h "$DMG" | cut -f1))"
 echo "    $ZIP  ($(du -h "$ZIP" | cut -f1))"
 echo
 echo "    Not notarized (no Developer ID cert). On another Mac, first launch:"
-echo "      right-click the app -> Open -> Open,  or:  xattr -dr com.apple.quarantine /Applications/MacBat.app"
+echo "      right-click the app -> Open -> Open,  or:  xattr -dr com.apple.quarantine \"/Applications/$APP_NAME.app\""

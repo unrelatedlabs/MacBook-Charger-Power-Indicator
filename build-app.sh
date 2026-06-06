@@ -1,10 +1,11 @@
 #!/bin/bash
-# Build MacBat and assemble a runnable .app bundle in ./build/MacBat.app
+# Build and assemble a runnable .app bundle in ./build/
 set -euo pipefail
 
 cd "$(dirname "$0")"
 
-APP="build/MacBat.app"
+APP_NAME="MacBook Charger Power Indicator"
+APP="build/$APP_NAME.app"
 CONTENTS="$APP/Contents"
 
 echo "==> Building release binary"
@@ -22,4 +23,4 @@ echo "==> Ad-hoc code signing"
 codesign --force --sign - "$APP" >/dev/null 2>&1 || true
 
 echo "==> Done: $APP"
-echo "    Run with:  open $APP"
+echo "    Run with:  open \"$APP\""
