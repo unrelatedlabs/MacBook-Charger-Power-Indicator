@@ -1,0 +1,258 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0000000000000000000B01 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000000000000000000F1 /* main.swift */; };
+		1A0000000000000000000B02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000000000000000000F2 /* AppDelegate.swift */; };
+		1A0000000000000000000B03 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000000000000000000F3 /* AppIcon.swift */; };
+		1A0000000000000000000B04 /* BatteryIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000000000000000000F4 /* BatteryIcon.swift */; };
+		1A0000000000000000000B05 /* PowerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000000000000000000F5 /* PowerInfo.swift */; };
+		1A0000000000000000000B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A00000000000000000000FA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A00000000000000000000F1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1A00000000000000000000F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A00000000000000000000F3 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
+		1A00000000000000000000F4 /* BatteryIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryIcon.swift; sourceTree = "<group>"; };
+		1A00000000000000000000F5 /* PowerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerInfo.swift; sourceTree = "<group>"; };
+		1A00000000000000000000FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Xcode/Assets.xcassets; sourceTree = "<group>"; };
+		1A00000000000000000000FB /* MacBat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacBat.entitlements; sourceTree = "<group>"; };
+		1A0000000000000000000FF0 /* MacBook Charger Power Indicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MacBook Charger Power Indicator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0000000000000000000032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0000000000000000000040 = {
+			isa = PBXGroup;
+			children = (
+				1A0000000000000000000041 /* MacBat */,
+				1A00000000000000000000FA /* Assets.xcassets */,
+				1A00000000000000000000FB /* MacBat.entitlements */,
+				1A0000000000000000000042 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A0000000000000000000041 /* MacBat */ = {
+			isa = PBXGroup;
+			children = (
+				1A00000000000000000000F1 /* main.swift */,
+				1A00000000000000000000F2 /* AppDelegate.swift */,
+				1A00000000000000000000F3 /* AppIcon.swift */,
+				1A00000000000000000000F4 /* BatteryIcon.swift */,
+				1A00000000000000000000F5 /* PowerInfo.swift */,
+			);
+			path = Sources/MacBat;
+			sourceTree = "<group>";
+		};
+		1A0000000000000000000042 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000000000000000000FF0 /* MacBook Charger Power Indicator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0000000000000000000002 /* MacBook Charger Power Indicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0000000000000000000020 /* Build configuration list for PBXNativeTarget "MacBook Charger Power Indicator" */;
+			buildPhases = (
+				1A0000000000000000000031 /* Sources */,
+				1A0000000000000000000032 /* Frameworks */,
+				1A0000000000000000000033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MacBook Charger Power Indicator";
+			productName = "MacBook Charger Power Indicator";
+			productReference = 1A0000000000000000000FF0 /* MacBook Charger Power Indicator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					1A0000000000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 1A0000000000000000000010 /* Build configuration list for PBXProject "MacBookChargerPowerIndicator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A0000000000000000000040;
+			productRefGroup = 1A0000000000000000000042 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A0000000000000000000002 /* MacBook Charger Power Indicator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0000000000000000000033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000000000000000000B10 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0000000000000000000031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000000000000000000B01 /* main.swift in Sources */,
+				1A0000000000000000000B02 /* AppDelegate.swift in Sources */,
+				1A0000000000000000000B03 /* AppIcon.swift in Sources */,
+				1A0000000000000000000B04 /* BatteryIcon.swift in Sources */,
+				1A0000000000000000000B05 /* PowerInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A0000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A0000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1A0000000000000000000021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacBat.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Peter Kuhar";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.inteliwear.macos.macbat;
+				PRODUCT_NAME = "MacBook Charger Power Indicator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		1A0000000000000000000022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacBat.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Peter Kuhar";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.inteliwear.macos.macbat;
+				PRODUCT_NAME = "MacBook Charger Power Indicator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0000000000000000000010 /* Build configuration list for PBXProject "MacBookChargerPowerIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000000000000000000011 /* Debug */,
+				1A0000000000000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0000000000000000000020 /* Build configuration list for PBXNativeTarget "MacBook Charger Power Indicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000000000000000000021 /* Debug */,
+				1A0000000000000000000022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A0000000000000000000001 /* Project object */;
+}

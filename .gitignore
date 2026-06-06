@@ -3,3 +3,9 @@ build/
 dist/
 .DS_Store
 *.swiftpm
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.xcarchive
