@@ -3,6 +3,13 @@
 A tiny macOS menu-bar app that shows your battery — and, when a charger is
 plugged in, the **charging power in watts**.
 
+## Demo
+
+<p align="center">
+  <img src="media/menubar.gif" width="300" alt="Menu-bar readout switching to charging wattage"><br><br>
+  <img src="media/dropdown.gif" width="240" alt="Dropdown with battery, adapter, and USB-C power details">
+</p>
+
 ## What it does
 
 - **On battery:** a battery icon with the charge **percentage** inside it.
