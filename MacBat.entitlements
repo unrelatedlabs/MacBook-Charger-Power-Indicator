@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!--
+      Mac App Store entitlements. App Sandbox is the only one this app needs:
+      it reads local power data (read-only IORegistry + IOPS public APIs) and
+      registers a login item via SMAppService — neither requires extra
+      entitlements. Used only by the Mac App Store build, not by the direct
+      (ad-hoc / Developer ID) distribution in package.sh.
+    -->
+    <key>com.apple.security.app-sandbox</key>
+    <true/>
+</dict>
+</plist>

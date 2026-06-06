@@ -7,7 +7,7 @@
     <key>CFBundleDisplayName</key>
     <string>MacBook Charger Power Indicator</string>
     <key>CFBundleIdentifier</key>
-    <string>com.pkuhar.macbat</string>
+    <string>xyz.inteliwear.macos.macbat</string>
     <key>CFBundleExecutable</key>
     <string>MacBat</string>
     <key>CFBundleIconFile</key>
@@ -22,6 +22,8 @@
     <string>13.0</string>
     <key>LSUIElement</key>
     <true/>
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.utilities</string>
     <key>NSHumanReadableCopyright</key>
     <string>© 2026 Peter Kuhar</string>
 </dict>
