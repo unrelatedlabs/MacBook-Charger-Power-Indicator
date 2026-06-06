@@ -12,7 +12,7 @@
 		1A0000000000000000000B03 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000000000000000000F3 /* AppIcon.swift */; };
 		1A0000000000000000000B04 /* BatteryIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000000000000000000F4 /* BatteryIcon.swift */; };
 		1A0000000000000000000B05 /* PowerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000000000000000000F5 /* PowerInfo.swift */; };
-		1A0000000000000000000B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A00000000000000000000FA /* Assets.xcassets */; };
+		1A0000000000000000000B10 /* Xcode/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A00000000000000000000FA /* Xcode/Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 		1A00000000000000000000F3 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
 		1A00000000000000000000F4 /* BatteryIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryIcon.swift; sourceTree = "<group>"; };
 		1A00000000000000000000F5 /* PowerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerInfo.swift; sourceTree = "<group>"; };
-		1A00000000000000000000FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Xcode/Assets.xcassets; sourceTree = "<group>"; };
+		1A00000000000000000000FA /* Xcode/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Xcode/Assets.xcassets; sourceTree = "<group>"; };
 		1A00000000000000000000FB /* MacBat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacBat.entitlements; sourceTree = "<group>"; };
 		1A0000000000000000000FF0 /* MacBook Charger Power Indicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MacBook Charger Power Indicator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -40,14 +40,14 @@
 		1A0000000000000000000040 = {
 			isa = PBXGroup;
 			children = (
-				1A0000000000000000000041 /* MacBat */,
-				1A00000000000000000000FA /* Assets.xcassets */,
+				1A0000000000000000000041 /* Sources/MacBat */,
+				1A00000000000000000000FA /* Xcode/Assets.xcassets */,
 				1A00000000000000000000FB /* MacBat.entitlements */,
 				1A0000000000000000000042 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1A0000000000000000000041 /* MacBat */ = {
+		1A0000000000000000000041 /* Sources/MacBat */ = {
 			isa = PBXGroup;
 			children = (
 				1A00000000000000000000F1 /* main.swift */,
@@ -125,7 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0000000000000000000B10 /* Assets.xcassets in Resources */,
+				1A0000000000000000000B10 /* Xcode/Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,10 +193,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MacBat.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5QJ7W2AQ8H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -215,10 +216,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MacBat.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5QJ7W2AQ8H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";

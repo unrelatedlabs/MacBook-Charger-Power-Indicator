@@ -36,7 +36,13 @@ if let i = CommandLine.arguments.firstIndex(of: "--render"),
     let text = CommandLine.arguments[i + 1]
     let out = CommandLine.arguments[i + 2]
     var s = PowerInfo.read()
-    s.isPlugged = text.hasSuffix("W")   // tint preview to match the label kind
+    // Synthesize a coherent state so the preview matches the label: a "…W"
+    // label is charging (green), a "…%" label is on battery (neutral ink).
+    let plugged = text.hasSuffix("W")
+    s.isPlugged = plugged
+    s.isCharging = plugged
+    s.isCharged = false
+    if text.hasSuffix("%"), let n = Int(text.dropLast()) { s.percent = n }
     let dark = CommandLine.arguments.contains("--dark")
     let image = BatteryIcon.image(for: s, text: text, dark: dark)
     if let tiff = image.tiffRepresentation,
