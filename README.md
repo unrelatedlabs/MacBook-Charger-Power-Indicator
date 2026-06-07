@@ -46,6 +46,11 @@ Quit it from its own dropdown (**Quit**).
 ./package.sh   # creates dist/MacBook-Charger-Power-Indicator.dmg and .zip
 ```
 
+## Privacy
+
+The app reads battery/adapter data locally via IOKit and has no network access —
+nothing is collected or transmitted. See [PRIVACY.md](PRIVACY.md).
+
 ## License
 
 MIT — © 2026 Peter Kuhar ([@pkuhar](https://github.com/pkuhar)). See [LICENSE](LICENSE).

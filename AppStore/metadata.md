@@ -42,6 +42,9 @@ Turn on "Start at Login" with a single toggle in the menu, and it quietly lives 
 ## Keywords  [≤100 chars, comma-separated]
 battery,charger,watts,wattage,power,USB-C,menu bar,adapter,charging,battery health,cycles,amperage
 
+## Privacy Policy URL  [required]
+https://github.com/unrelatedlabs/MacBook-Charger-Power-Indicator/blob/main/PRIVACY.md
+
 ## Support URL
 https://github.com/unrelatedlabs/MacBook-Charger-Power-Indicator
 
