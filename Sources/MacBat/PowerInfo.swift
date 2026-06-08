@@ -11,6 +11,7 @@ struct PowerSnapshot {
     var isCharged: Bool = false     // plugged in and full
     var isPlugged: Bool = false     // an external power source is attached
     var batteryPresent: Bool = true
+    var lowPowerMode: Bool = false  // Low Power / energy saving mode is on
 
     // Live electrical values
     var voltage: Double = 0         // volts
@@ -78,6 +79,7 @@ enum PowerInfo {
         readPowerSources(into: &s)
         readSmartBattery(into: &s)
         readAdapter(into: &s)
+        s.lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled
         return s
     }
 
